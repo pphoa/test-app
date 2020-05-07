@@ -1,0 +1,26 @@
+extends layout
+
+block content
+
+  h1 Flags of the world - compare cool-looking flags.
+  .topnav
+    button#earthButton Earth
+    button#vanuButton Vanuatu
+    button#luciaButton St. Lucia
+    button#seyButton Seychelles
+    button#alandButton Aland
+    button#compButton Compare
+    button#mapButton WorldMap
+    script(src='javascripts/client.js')
+  .main
+    h1 Welcome to: #{flag_name}
+    h2 Likes: #{votes}
+    img(src='images/lucia.jpg',style='width:500px') 
+  form(action="/lucia", method="POST")
+    button(type="submit") Like
+    h2 About
+    p #{about}
+    p #{about1}
+    p #{about2}
+    img(src='images/lucia_about.jpg')
+    figcaption Sunset overlooking the Piton Mountains

@@ -1,0 +1,19 @@
+extends layout
+
+block content
+
+  h1 Flag comparison - compare flags!
+  .topnav
+    button#earthButton Earth
+    button#vanuButton Vanuatu
+    button#luciaButton St. Lucia 
+    button#seyButton Seychelles
+    button#alandButton Aland 
+    button#compButton Compare
+    button#mapButton WorldMap
+    script(src='javascripts/client.js')
+  .main
+    img(src='images/vanuatu.jpg', alt='Image', width='500', height='400')
+    img(src='images/lucia.jpg', alt='Image', width='500', height='400')
+    img(src='images/seychelles.jpg', alt='Image', width='500', height='400')
+    img(src='images/aland.jpg', alt='Image', width='500', height='400')

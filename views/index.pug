@@ -1,0 +1,22 @@
+extends layout
+
+block content
+
+  h1 Flags of the world - compare cool-looking flags.
+  .topnav
+    button#earthButton Earth
+    button#vanuButton Vanuatu
+    button#luciaButton St. Lucia
+    button#seyButton Seychelles
+    button#alandButton Aland
+    button#compButton Compare
+    button#mapButton WorldMap
+    script(src='javascripts/client.js')
+  .main
+    h1 Beautiful world flags you should know!
+    p #{about}
+    img(src='images/earth.jpg',style='width:500px') 
+
+
+
+

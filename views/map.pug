@@ -1,0 +1,21 @@
+extends layout
+
+block content
+
+  h1 Flag comparison -  compare flags!
+  .topnav
+    button#earthButton Earth
+    button#vanuButton Vanuatu
+    button#luciaButton St. Lucia 
+    button#seyButton Seychelles
+    button#alandButton Aland 
+    button#compButton Compare
+    button#mapButton WorldMap
+
+  .main
+    
+
+    script(src='javascripts/client.js')
+    script(async='', defer='', src='https://maps.googleapis.com/maps/api/js?key=AIzaSyCZ1ty3JRH_vkI_-UKkPer6knphkW2yHFQ&callback=initMap', <='', script='')
+  .map
+    #map
